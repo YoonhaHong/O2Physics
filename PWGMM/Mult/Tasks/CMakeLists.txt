@@ -9,8 +9,6 @@
 # granted to it by virtue of its status as an Intergovernmental Organization
 # or submit itself to any jurisdiction.
 
-#Yoonha Hong
-
 o2physics_add_dpl_workflow(run2-dndeta
                     SOURCES run2dndeta.cxx
                     PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore
@@ -62,12 +60,7 @@ o2physics_add_dpl_workflow(heavy-ion-mult
                     PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore
                     COMPONENT_NAME Analysis)
 
-o2physics_add_dpl_workflow(multiplicity-pb-pb
-                  SOURCES multiplicityPbPb.cxx
-                  PUBLIC_LINK_LIBRARIES O2Physics::AnalysisCore
-                  COMPONENT_NAME Analysis)
-
-o2physics_add_dpl_workflow(flattenicty-chrg
-                  SOURCES flattenicty-chrg.cxx
-                  PUBLIC_LINK_LIBRARIES O2Physics::AnalysisCore
-                  COMPONENT_NAME Analysis)
+o2physics_add_dpl_workflow(test-task
+                    SOURCES testTask.cxx
+                    PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore
+                    COMPONENT_NAME Analysis)
